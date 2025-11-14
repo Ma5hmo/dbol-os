@@ -1,4 +1,31 @@
 # DBol OS
+
+## What we wrote
+We wrote a 32bit operating system for the i386 architecture. Most of the code is written in C with tiny bits of x86 assembly.
+
+Our operating system implements:
+
+- Drivers for:
+  - ATA (hardisk)
+  - Keyboard input
+  - VGA
+- Filesystem:
+  - A filesystem inspired by FAT16
+  - A small implementation of vfs mechanism
+- Memory:
+  - Physical memory
+  - Virtual memory
+  - Paging
+  - Kernel heap
+- Process:
+  - Basic ELF format loading
+  - Round robin task schdeuling
+- Syscalls:
+  - Linux inspired syscalls
+  - POSIX compliant syscalls
+- LIBC
+  - Configured and used Newlib  
+
 ## Build
 Run the init.sh script
 
