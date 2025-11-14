@@ -1,7 +1,7 @@
 # DBol OS
 
 ## What we wrote
-We wrote a 32bit operating system for the i386 architecture. Most of the code is written in C with tiny bits of x86 assembly.
+At the beginning of 2025, my friend and I wrote a 32bit operating system for the i386 architecture. Most of the code is written in C with tiny bits of x86 assembly.
 
 Our operating system implements:
 
@@ -20,11 +20,12 @@ Our operating system implements:
 - Process:
   - Basic ELF format loading
   - Round robin task schdeuling
+  - CLI with basic commands
 - Syscalls:
   - Linux inspired syscalls
   - POSIX compliant syscalls
 - LIBC
-  - Configured and used Newlib  
+  - Configured and used Newlib
 
 ## Build
 Run the init.sh script
@@ -46,7 +47,7 @@ And you can run with
 ``` qemu-system-i386 -cdrom kernel.iso -drive format=raw,file=fs.img,media=disk -boot d```
 
 ## Filesystem
-To initialzie a disk image you can run: ``` make disk ```
+To initialize a disk image you can run: ``` make disk ```
 
 We prepared a loader script for the os disk.
 
